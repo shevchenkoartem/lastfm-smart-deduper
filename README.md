@@ -1,11 +1,11 @@
-![Last.fm Smart Dedupler](https://repository-images.githubusercontent.com/226846544/47cc1980-1a9c-11ea-8202-309c6629656a)
+![Last.fm Smart Deduper](https://repository-images.githubusercontent.com/226846544/220b3880-1acd-11ea-9894-d310454be9ae)
 
 This script allows you to remove duplicates from your [Last.fm](https://www.last.fm/) scrobbles library. Why is this tool better than other similar ones?  Because it's *smart*: it can handle not only the situation when the same song was scrobbled multiple times in a row but also more complicated cases e.g. when duplicates were added a bit later (it's a common situation if you're using Spotify and Last.fm and have mistakenly set up scrobbling on both sides. Also, it has 3 modes: from absolutely safe (allowing you to make all the choices by yourself) to independent silent mode.
 
 ## How To Use
-* Log into your Last.fm account and go to your `Scrobbles Library` (https://www.last.fm/user/%USERNAME%/library)
+* Log into your Last.fm account and go to your `Scrobbles Library` (`https://www.last.fm/user/%USERNAME%/library`)
 * Go to the page with duplicated scrobbles you want to remove
-* Copy-paste the [script](https://github.com/shevchenkoartem/lastfm-smart-dedupler/blob/master/other/compressed-mode1-balanced.js) (use mouse triple-click to select all the line) into the browser's console (`F12` for Chrome) and press `Enter` to run it
+* Copy-paste the [script](https://github.com/shevchenkoartem/lastfm-smart-deduper/blob/master/other/compressed-mode1-balanced.js) (use mouse triple-click to select all the line) into the browser's console (`F12` for Chrome) and press `Enter` to run it
 * Some duplicates will be deleted automatically (just trust the script!), some of them will be given to you for making the right decision—to delete or not to delete (that is the question ©). Anyway, all the duplicates will be marked by an appropriate color.
 * Press Delete button displayed near the scrobbles you want to delete (don't press the button if you do not).
 * Refresh the page. Voilà! Duplicates have been disappeared! :+1:
@@ -18,9 +18,9 @@ You can run the script using 3 different modes depending on how accurate results
 
 MODE code | Name | Accuracy | How it works
 -- | -- | -- | --
-0 | [silent](https://github.com/shevchenkoartem/lastfm-smart-dedupler/blob/master/other/compressed-mode0-silent) | >95% | All the found duplicates (even questionable) will be deleted immediately. Use this mode only if you want to go the easiest way of deduplication and you don't need very high accuracy. | 
-1 | [**balanced***](https://github.com/shevchenkoartem/lastfm-smart-dedupler/blob/master/other/compressed-mode1-balanced.js) | >99% | The duplicates which obviously are duplicates will be deleted immediately. All the questionable cases will be marked with the Delete button so that you can make the right decision.
-2 | [safe](https://github.com/shevchenkoartem/lastfm-smart-dedupler/blob/master/other/compressed-mode2-safe.js) | 100% | For the most watchful :eyes: users—you'll always be given a choice. If you have enough time and strong nerves, use it.
+0 | [silent](https://github.com/shevchenkoartem/lastfm-smart-deduper/blob/master/other/compressed-mode0-silent) | >95% | All the found duplicates (even questionable) will be deleted immediately. Use this mode only if you want to go the easiest way of deduplication and you don't need very high accuracy. | 
+1 | [**balanced***](https://github.com/shevchenkoartem/lastfm-smart-deduper/blob/master/other/compressed-mode1-balanced.js) | >99% | The duplicates which obviously are duplicates will be deleted immediately. All the questionable cases will be marked with the Delete button so that you can make the right decision.
+2 | [safe](https://github.com/shevchenkoartem/lastfm-smart-deduper/blob/master/other/compressed-mode2-safe.js) | 100% | For the most watchful :eyes: users—you'll always be given a choice. If you have enough time and strong nerves, use it.
 
 \* *recommended*
 
@@ -42,7 +42,7 @@ Bookmarking is much more convenient than using a console so it worth creating a 
 
 ## Fine-tuning (advanced)
 
-The script has a few parameters which define its behavior. You can fine-tune it by changing the following constants at the beginning of the script:
+The script has a few parameters which define its behavior. You can fine-tune it by changing the following constants at the beginning of the [script](https://github.com/shevchenkoartem/lastfm-smart-deduper/blob/master/lastfm-smart-deduper.js):
 
 Parameter name | Default value | Meaning
 -- | -- | --
