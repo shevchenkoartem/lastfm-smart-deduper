@@ -5,7 +5,7 @@ This script allows you to remove duplicates from your [Last.fm](https://www.last
 ## How To Use
 * Log into your Last.fm account and go to your `Scrobbles Library` (`https://www.last.fm/user/%USERNAME%/library`)
 * Go to the page with duplicated scrobbles you want to remove
-* Copy-paste the [script](https://github.com/shevchenkoartem/lastfm-smart-deduper/blob/master/other/compressed-mode1-balanced.js) (use mouse triple-click to select all the line) into the browser's console (`F12` for Chrome) and press `Enter` to run it
+* Copy-paste the [script](https://github.com/shevchenkoartem/lastfm-smart-deduper/blob/master/other/compressed-js/compressed-mode1-balanced.js) (use mouse triple-click to select all the line) into the browser's console (`F12` for Chrome) and press `Enter` to run it
 * Some duplicates will be deleted automatically (just trust the script!), some of them will be given to you for making the right decision—to delete or not to delete (that is the question ©). Anyway, all the duplicates will be marked by an appropriate color.
 * Press Delete button displayed near the scrobbles you want to delete (don't press the button if you do not).
 * Refresh the page. Voilà! Duplicates have been disappeared! :+1:
@@ -18,9 +18,9 @@ You can run the script using 3 different modes depending on how accurate results
 
 MODE code | Name | Accuracy | How it works
 -- | -- | -- | --
-0 | [silent](https://github.com/shevchenkoartem/lastfm-smart-deduper/blob/master/other/compressed-mode0-silent) | >95% | All the found duplicates (even questionable) will be deleted immediately. Use this mode only if you want to go the easiest way of deduplication and you don't need very high accuracy. | 
-1 | [**balanced***](https://github.com/shevchenkoartem/lastfm-smart-deduper/blob/master/other/compressed-mode1-balanced.js) | >99% | The duplicates which obviously are duplicates will be deleted immediately. All the questionable cases will be marked with the Delete button so that you can make the right decision.
-2 | [safe](https://github.com/shevchenkoartem/lastfm-smart-deduper/blob/master/other/compressed-mode2-safe.js) | 100% | For the most watchful :eyes: users—you'll always be given a choice. If you have enough time and strong nerves, use it.
+0 | [silent](https://github.com/shevchenkoartem/lastfm-smart-deduper/blob/master/other/compressed-js/compressed-mode0-silent.js) | >95% | All the found duplicates (even questionable) will be deleted immediately. Use this mode only if you want to go the easiest way of deduplication and you don't need very high accuracy. | 
+1 | [**balanced***](https://github.com/shevchenkoartem/lastfm-smart-deduper/blob/master/other/compressed-js/compressed-mode1-balanced.js) | >99% | The duplicates which obviously are duplicates will be deleted immediately. All the questionable cases will be marked with the Delete button so that you can make the right decision.
+2 | [safe](https://github.com/shevchenkoartem/lastfm-smart-deduper/blob/master/other/compressed-js/compressed-mode2-safe.js) | 100% | For the most watchful :eyes: users—you'll always be given a choice. If you have enough time and strong nerves, use it.
 
 \* *recommended*
 
