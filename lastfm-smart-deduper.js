@@ -91,7 +91,7 @@ function processCache() {
             const isInsignificantTimeDiff = diffMins <= MIN_SCROBBLE_TIME_MINS;
 
             if (isInsignificantTimeDiff) {
-                // if it was questionable before - it's time for forced deletion now (as datetime is duplicated):
+                // if it was questionable before - it's time for forced deletion now (as datetime is almost the same):
                 current.forcedDeleteIfDuplicated();
                 laterOne.forcedDeleteIfDuplicated();
             }
