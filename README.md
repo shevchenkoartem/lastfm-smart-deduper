@@ -46,7 +46,7 @@ The script has a few parameters which define its behavior. You can fine-tune it 
 
 Parameter name | Default value | Meaning
 -- | -- | --
-MODE | 1 | Read **`Script modes`** section
+MODE | 1 | Read [Script modes](https://github.com/shevchenkoartem/lastfm-smart-deduper#script-modes) section
 CACHE_MAX_SIZE | 4 | If the positional distance (including) between two scrobbles is greater they will not be considered as duplicates. Set it to 2 if you want to clean-up only neighboring duplicates (this way the script would work like the other ones you can find on the Internet)
 MAX_DIFF_MINS | 15 | If the time difference (in minutes) between two scrobbles is greater they will not be considered as duplicates. Try to analyze your cases and set this parameter appropriately.
 MIN_SCROBBLE_TIME_MINS | 1 | If the time difference (in minutes) between the same songs is less they will be unquestionably considered as duplicates. If you're a grindcore (as well as other genres with a lot of "micro songs") lover, it's recommended to set it to 0.
